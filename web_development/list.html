@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+    <!-- 3.types of List -->
+    <!-- 1.ordered List -->
+    <!-- 2.unordered List -->
+    <!-- 3.description List -->
+     <h3>Ordered List</h3>
+     <ol>
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+        <li>c</li>
+        <li>c#</li>
+     </ol>
+     <hr>
+     <h3>Unordered List</h3>
+     <!-- unordered lisi -->
+      <ul style="list-style-type:square;">
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+        <li>c</li>
+        <li>c#</li>
+      </ul>
+      <hr>
+      <h3>Description List</h3>
+      <!-- description list -->
+       <dl>
+        <dt>Java</dt>
+        <dd>backend lanuage</dd>
+        <dt>Html</dt>
+        <dd>frontend lanuage</dd>
+        <dt>Mysql</dt>
+        <dd>database lanuage</dd>
+       </dl>
+       <hr>
+       <h3>Nested List</h3>
+       <!-- Nested List -->
+        <dl>
+            <dt>Java FullStack</dt>
+        <ul>
+            <li>Frontend lanuage</li>
+        </ul>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <ol>
+                <li>React</li>
+                <li>View js</li>
+                <li>Angular</li>
+            </ol>
+        </ol>
+        <ul>
+            <li>Backend Lanuage</li>
+        </ul>
+        <ol>
+            <li>Java</li>
+        </ol>
+        <ul>
+            <li>Database Lanuage</li>
+        </ul>
+        <ol>
+            <li>Mysql</li>
+            <li>Orcale</li>
+            <li>Postgressql</li>
+        </ol>
+    </dl>
+    <hr>
+    <h3>Formmating Tag</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Corporis earum alias consequuntur dignissimos </b>deserunt blanditiis inventore sed temporibus et dolore! <strong>Quis, ipsa </strong>asperiores ducimus veniam odio blanditiis sapiente consequuntur adipisci!
+    </p>
+    <hr>
+    <!-- del tag -->
+     <h3>Del Tag</h3>
+     <p>₹900 <del>₹1000</del> 10%off</p>
+    <hr>
+     <!-- sub tag -->
+      <h3>Sub Tag</h3>
+      <p>H <sub>2</sub>O</p>
+    <hr>
+    <!-- sup tag -->
+     <h3>Sup Tag</h3>
+     <p>2 <sup>2</sup>=4</p>
+
+    <hr>
+    <!-- itaclic tag -->
+     <h3>Italic tag</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate id quidem nam praesentium consequuntur aliquam aperiam commodi possimus <i><b>illoveniam, atque, beatae explicabo!</b></i>  Repellat dolorem illum dolore at nemo recusandae mollitia nostrum iste, fugiat perferendis, cumque voluptatem dignissimos dolorum esse commodi veritatis? Dolore reprehenderit aut doloremque dignissimos maxime aliquam ut.</p>
+    
+    <hr>
+     <!-- abbrevation tag -->
+      <h3>Abbrevation tag</h3>
+      <p><abbr title="Hyper text markup language" style="text-decoration: underline;">HTML</abbr> is a fronted language. it is use for creating a structure of the webpage</p>
+
+      <hr>
+      <!-- mark tag -->
+       <h3>Mark tag</h3>
+       <p><mark>Lorem ipsum dolor sit</mark>, amet consectetur adipisicing elit. Distinctio nam corporis eum iusto ut, nulla est voluptatum eaque eligendi dolore tempore delectus itaque numquam fugit dolores sit officiis asperiores earum totam odio a. Quisquam necessitatibus iure sint repellendus modi velit impedit dicta consectetur. Est omnis harum laboriosam nulla cum quisquam.</p>
+        <hr>
+       <!-- small tag -->
+        <h3>Small Tag</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <small>Accusantium fuga laboriosam delectus magni iusto officiis corporis eum repellat</small>, adipisci inventore consectetur voluptates, optio et architecto temporibus consequatur facere asperiores non ratione vero perspiciatis cumque quibusdam. Eligendi tempora provident quisquam enim expedita voluptates esse fuga nisi voluptatibus aspernatur, neque mollitia ex.]</p>
+        <hr>
+        <!-- inserted tag -->
+         <h3>Inserted tag</h3>
+         <p><ins>Java</ins> is an platform independent language</p>
+
+         <hr>
+         
+<pre>
+    public class comparator {
+
+        public static void main(String[] args) {
+            // TODO Auto-generated method stub
+            
+            ArrayList<Employee> al1=new ArrayList<Employee>();
+            Employee e1=new Employee(3,"john",45000);
+            Employee e2=new Employee(2,"ram",40000);
+            Employee e3=new Employee(1,"jack",30000);
+            al1.add(e1);
+            al1.add(e2);
+            al1.add(e3);
+            Collections.sort(al1, new IdComparator());
+            System.out.println(al1);
+            
+    
+            ArrayList<Employee> al2=new ArrayList<Employee>();
+            al2.add(e1);
+            al2.add(e2);
+            al2.add(e3);
+            Collections.sort(al2, new nameComparator());
+            System.out.println(al2);
+            
+            ArrayList<Employee> al3=new ArrayList<Employee>();
+            al3.add(e1);
+            al3.add(e2);
+            al3.add(e3);
+            Collections.sort(al3, new salaryComparator());
+            System.out.println(al3);
+    
+        }
+    
+    }
+    
+</pre>
+        
+
+</body>
+</html>

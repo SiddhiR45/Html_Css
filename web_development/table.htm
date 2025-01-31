@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width: 80%;
+            margin: 100px auto;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+        th,td{
+            border: 1px soli black;
+        }
+        .header{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>Employee Table</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>abc</td>
+                <td>27000</td>
+                <td>20</td>
+                <td>Dadar</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>xyz</td>
+                <td>30000</td>
+                <td>21</td>
+                <td>Malad</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>pqr</td>
+                <td>25000</td>
+                <td>23</td>
+                <td>Bandra</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Colspan -->
+    <table border="1">
+        <caption><h1>Col Span</h1></caption>
+        <thead class="header">
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th colspan="2">contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>xyz</td>
+                <td>xyz@gmail.com</td>
+                <td>9847238910</td>
+                <td>903728378</td>
+            </tr>
+            <tr>
+                <td>xyz</td>
+                <td>xyz@gmail.com</td>
+                <td>9847238910</td>
+                <td>903728378</td>
+            </tr>
+            <tr>
+                <td>xyz</td>
+                <td>xyz@gmail.com</td>
+                <td>9847238910</td>
+                <td>903728378</td>
+            </tr>
+            <tr>
+                <td>xyz</td>
+                <td>xyz@gmail.com</td>
+                <td>9847238910</td>
+                <td>903728378</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- rowspan -->
+     <table border="1">
+        <caption><h1>Row Span</h1></caption>
+        <thead class="header">
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">xyz</td>
+                <td rowspan="2">xyz@gmail.com</td>
+                <td>9847238910</td>
+            </tr>
+            <tr>
+                <td>903728378</td>
+            </tr>
+            <tr>
+                <td rowspan="2">xyz</td>
+                <td rowspan="2">xyz@gmail.com</td>
+                <td>9847238910</td>
+            </tr>
+            <tr>
+                <td>903728378</td>
+            </tr>
+            <tr>
+                <td rowspan="2">xyz</td>
+                <td rowspan="2">xyz@gmail.com</td>
+                <td>9847238910</td>
+            </tr>
+            <tr>
+                <td>903728378</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>

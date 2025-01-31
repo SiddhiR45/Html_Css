@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        nav {
+            width: 100%;
+            background-color: rgb(255, 87, 0);
+            display: flex;
+            padding: 7px 0px;
+            position: fixed;
+            top: 0;
+        }
+
+        .first {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .second {
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: rgb(255, 87, 0);
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+            padding: 5px 0px;
+        }
+
+        .first-main {
+            width: 70%;
+            height: 2000px;
+            background-color: aquamarine;
+        }
+
+        .second-main {
+            width: 30%;
+            height: 2000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+        }
+
+        main {
+            display: flex;
+            height: 700px;
+        }
+
+        section {
+            height: 50%;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article {
+            height: 50%;
+            background-color: darkkhaki;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="first">
+                <img src="Swiggy_logo.png" alt="" height="30px">
+            </div>
+            <div class="second">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">SignIn</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="first-main">
+            <section>
+                This is My Section Tag
+            </section>
+            <article>
+                This is My Article Tag
+            </article>
+        </div>
+        <div class="second-main">
+            <aside>
+                This is My Aside Tag
+            </aside>
+        </div>
+    </main>
+    <footer>
+        © Copyright Pyzon IT All Rights Reserved
+    </footer>
+</body>
+
+</html>
